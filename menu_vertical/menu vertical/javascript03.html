@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body id="corpo">
+    <script>
+        //let inf;
+        //inf = 3;
+
+        let inf = 3;
+        console.log(inf);
+        console.log(typeof inf);
+
+        // let inf = "senac"; ERRADO! Variável já declarada!
+        inf = "senac"
+        console.log(inf);
+        console.log(typeof inf);
+
+        inf = false;
+        console.log(inf);
+        console.log(typeof inf);
+
+    </script>
+
+    <input type="text" id="teste">
+    <button onclick="mensagem()">Enviar</button>
+
+    <script>
+        function mensagem(){
+          let nome = document.getElementById("teste").value; 
+          alert("Olá " + nome)
+        }
+    </script>
+
+    <br>
+
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <button onclick="calculo()">Resultado</button>
+    <input type="text" id="res">
+
+    <script>
+        function calculo(){
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+            let resultado = num1 + num2;
+            document.getElementById("res").value = resultado;
+        }
+    </script>
+
+    <h2>Operadores de incremento</h2>
+    <button onclick="fonte(2)">Aumente a fonte</button>
+    <button onclick="fonte(-2)">Diminua a fonte</button>
+
+    <script>
+        let tamanho = 16;
+
+        function fonte(a){
+        //tamanho++; //tamanho = tamanho + 1;
+        //tamanho--; //tamanho = tamanho - 1;
+
+        tamanho+=a; //tamanho = tamanho + 2;
+        document.getElementById("corpo").style.fontSize = tamanho + "px";
+        }
+
+
+
+    </script>
+</body>
+</html>

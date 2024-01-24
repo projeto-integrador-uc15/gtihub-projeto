@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Informações Pesssoais</title>
+</head>
+
+<body>
+    <h1> Informações pessoais  </h1>
+    <h2>Preencha seus dados</h2>
+
+    <form action="Tarefa.html">
+        
+        <fieldset id="ident_dono">
+            <legend>Informações Pesssoais</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" 
+                    name="nome" 
+                    id="nome" 
+                    size = "50" 
+                    maxlength="100"
+                    placeholder="Digite seu Nome completo "
+                    />
+            </p>
+
+            <p><label for="idade">Idade:</label>
+                <input type="text" name="idade" 
+                id="idade" size = "20" maxlength="4" 
+                placeholder="Digite sua Idade"/></p>
+
+        <p><label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" 
+            id="endereco" size = "30" maxlength="60" 
+            placeholder="Digite o seu Endereço"/></p>
+
+            <p><label for="cidade">Cidade:</label> 
+                <input type="text" name="cidade" 
+                id="cidade"  size = "20" maxlength="9" 
+                placeholder="Cidade"/></p>
+
+                <p><label for="estado">Estado:</label> 
+                    <input type="text" name="estado" 
+                    id="estado"  size = "20" maxlength="9" 
+                    placeholder="Estado"/></p>
+
+    
+        <p><label for="cep">CEP:</label> 
+            <input type="text" name="cep" 
+            id="cep"  size = "10" maxlength="9" 
+            placeholder="XXXXX-XXX"/></p>
+
+            <p><label for="tel_dono">Tel/Cel:</label> 
+                <input type="text" name="tel_dono"
+                id="tel_dono" size = "12" maxlength="14"  
+                placeholder="00 00000-0000"/></p>
+
+        <p><label for="email_dono">Email:</label> 
+            <input type="email" name="email_dono" 
+            id="email_dono" size = "40" maxlength="60" 
+            placeholder="Digite o endereço de E-mail"> </p> 
+
+       
+        </fieldset>
+
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>

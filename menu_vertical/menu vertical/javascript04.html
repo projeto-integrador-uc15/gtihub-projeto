@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <input type="text" id="hora" placeholder="Digite a hora" onkeyup="valida()">
+    <button id="btEnviar" onclick="mensagem()" disabled>Enviar</button>
+    <br>
+    <span id="mensagem" style="color:red;display:none;">Valor Inválido</span>
+
+    <script>
+        function valida(){
+            let hora = document.getElementById("hora").value;
+            if(isNaN(hora)){
+                document.getElementById("mensagem").style.display = "inline";
+                document.getElementById("btEnviar").disabled = true;
+            } else{
+                document.getElementById("mensagem").style.display = "none";
+                document.getElementById("btEnviar").disabled = false;
+            }
+        }
+
+        function mensagem(){
+            let hora = document.getElementById("hora").value;
+            if(hora>24){
+                alert("Valor Inválido");
+            }else if(hora>=18){
+                alert("Boa noite!");
+            }else if(hora>=12){
+                alert("Boa tarde!")
+            }else if(hora>=0){
+                alert("Bom dia!")
+            } else {
+                alert("Valor Inválido");
+            }
+        }
+
+        function mensagem2(){
+            let data = new Date();
+            let hora = data.getHours();
+
+            if(hora>=18){
+                alert("Boa noite!");
+            }else if(hora>=12){
+                alert("Boa tarde!");
+            }else {
+                alert("Bom dia!");
+            }
+        }
+
+        mensagem2();
+        
+    </script>
+
+
+    
+</body>
+</html>

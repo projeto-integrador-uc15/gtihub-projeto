@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    /* largura de borda e padding são compensados para não ultrapassar a largura do elemento */
+}
+.menu-h li
+{
+    display: inline;
+  float: left;
+}
+.menu-h ul{
+    margin: 16px 0;
+    padding: 0;
+    background-color: #9aa4ad;
+    overflow: hidden;
+}
+.menu-h li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 16px 70px ;
+    text-decoration: none ;
+}
+.menu-h li a:hover{
+    background-color: black;
+}
+.menu-h li.active{
+    background-color: black;
+}
+.body {
+    background-color: rgb(255, 255, 255);
+}
+.h4 {
+    font-family:courier,arial,helvetica;
+}
+.png {
+    width: 500px;
+    
+}
+main{
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    
+    /* height: 600px; */
+    /* normalmente se deixa a altura ser definida pelo conteúdo */
+    /* overflow: auto; */
+    /* usado quando precisa deixar a altura fixa */
+}
+.row{
+    display:flex;
+    flex-wrap: wrap; /* quebra a linha do flexbox quando larguras ultrapassam 100% */
+    
+}
+aside{
+    background-color:#ffffff;
+}
+
+footer{
+    background-color:#ffffff;
+}
+
+@media (min-width:576px){
+    main{
+        width: 50%;
+    }
+    aside{
+        width:50%;
+    }
+        }

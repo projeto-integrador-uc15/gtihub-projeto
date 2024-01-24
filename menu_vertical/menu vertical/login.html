@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+   <!-- <nav>
+    <h1>Código</h1>
+    <h1>Senha</h1>
+    
+    </nav>-->
+    <nav class="design">
+    <h3 class="info">
+        Código:
+    <br><input class="codigo" type="text" id="codigo"> </h3>
+    <h3>
+        Senha:
+     <br><input class="senha" type="text" id="senha"></h3>
+    <button class="botao" onclick="login()">Enviar</button>
+    </nav>
+
+    <script>
+        function login(){
+            let codigo = Number(document.getElementById("codigo").value);
+            let senha = (document.getElementById("senha").value);
+            
+        }
+    </script>
+</body>
+</html>
